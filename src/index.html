@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Sumicity Franquia</title>
+	<script src="../bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+	<script src="principal.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
+</head>
+<body>
+	<iframe src="http://sac.sumicity.net.br/sac/auth.xhtml" hidden></iframe>
+	<div class="container">
+		<h1>Bem vindo!</h1>
+		<p>Esta página tem o intuito de permitir os clientes da Sumicity verem de forma rápida quanto já gastaram de sua franquia.</p> 
+		<p>Se quiser mais detalhes sobre sua conta, é recomendado entrar direto no site da <a href="http://www.sumicity.com.br/">Sumicity</a></p>
+		<hr>
+		<p>É um projeto de código aberto (no GitHub) que pode ser visto <a href="https://github.com/raphaelduartepinheiro/SumicityFranquia" title="">aqui</a></p>
+
+		<form ng-submit="checar()">
+			<input class="form-group form-control" ng-model="cpf" placeholder="CPF">
+			<input class="form-group form-control" ng-model="senha" placeholder="Senha">
+			<button type="submit" class="btn btn-primary btn-block">Ver quanto consumi da franquia!</button>
+		</form>
+	</div>
+</body>
+</html>
